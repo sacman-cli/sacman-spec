@@ -41,19 +41,17 @@ sacman -Qu --type=service
 ## Available implementations
 
 Currently NONE. If you implement one feel free to make a PR here. 
-If you don't like `sacman-spec` standard you can also implement a `pacman-like` and list it here with version=custom-*name*-va.b.c. 
+If you don't like `sacman-spec` standard you can also implement a `pacman-like` one and list it here with version=custom-*name*-va.b.c. 
 
 | Implementation | Spec Version | Notes |
 |---------------|--------------|--------|
 | *implementation link here* | *e.g. v0.1* | *optional notes* |
 
 **Notes:**
-- `Spec Version` indicates which version of this spec the implementation follows
-- Implementations may support extensions
+- `Spec Version` indicates which version of this spec the implementation follows. See Release.
+- Implementations may support extensions.
 
 ## spec
-
-sacman-spec v0.1
 
 ### Design
 
