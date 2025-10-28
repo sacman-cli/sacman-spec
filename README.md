@@ -8,6 +8,9 @@ A specification defining the command-line interface and behavior for `sacman` im
 
 Don't you think that the command-line of `systemctl` is tooooooo long?
 
+[Try it here](https://sacman-cli.github.io/sacman-page/)
+To be honest, It's an AI generated webpage currently.
+
 ## Status
 
 Currently not stable. EVERYTHING might be changed. Discussion is welcomed.
