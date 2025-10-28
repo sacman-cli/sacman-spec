@@ -36,7 +36,7 @@ sacman -Qi tlp
 sacman -Sty tlp
 
 # systemctl list-units --type=service
-sacman -Qu --type=service
+sacman -Qy --type=service
 ```
 ## Available implementations
 
@@ -45,7 +45,7 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 
 | Implementation | Spec Version | Notes |
 |---------------|--------------|--------|
-| *implementation link here* | *e.g. v0.1* | *optional notes* |
+| [sacman-py](https://github.com/sacman-cli/sacman-py) | v0.1 | quick example |
 
 **Notes:**
 - `Spec Version` indicates which version of this spec the implementation follows. See Release.
@@ -114,15 +114,14 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 |-|-|-|
 | `-Ql` | `list-unit-files` |
 | `-Qd` | `list-dependencies` |
-| `-Qa` | `list-automounts` |
+| `-Qo` | `list-automounts` | 'ao' |
 | `-Qm` | `list-machines` |
 | `-Qt` | `list-timers` |
 | `-Qp` | `list-paths` |
 | `-Qk` | `list-sockets` |
-| `-Qu` | `list-units` |
+| `-Qy` | `list-units` | 'yunit' |
 | `-Qj` | `list-jobs` |
 | `-Qi` | `status` |
-| `-Qs*` | `* \| grep $@` |
 
 ### -F
 
@@ -150,5 +149,5 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 |-|-|-|
 | `-N` | `show-environment` |  |
 | `-Ns` | `set-environment` |  |
-| `-Nu` | `unset-environment` |  |
+| `-Nn` | `unset-environment` |  |
 | `-Ni` | `import-environment` |  |
