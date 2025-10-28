@@ -58,7 +58,6 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 
 |Args|for|
 |-|-|
-|`-D` | systemctl `--dry-run` |
 |`-S` | enable/start/unmask units |
 |`-R` | disable/stop/mask units |
 |`-Q` | Query units |
@@ -77,6 +76,7 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 | `-a` | `--all` |
 | `-r` | `--recursive` |
 | `-f` | `--force` |
+| `-D` | `--dry-run` |
 | `-z` | dry-run of `sacman` (show the command will be executed) |
 
 ### -S
