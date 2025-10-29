@@ -4,6 +4,8 @@ A specification defining the command-line interface and behavior for `sacman` im
 
 ## What is `sacman`
 
+SACMAN Ain't Control MANager.
+
 `sacman` provides pacman-like command-line interface for basic `systemctl` usage.
 
 Don't you think that the command-line of `systemctl` is tooooooo long?
@@ -90,6 +92,7 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 | `-S` | `enable` | pacman-like |
 | `-Sy` | `reenable` | `y` for `re-`|
 | `-Sd` | `reload` | reloaD |
+| `-Se` | `thaw` | frEEze |
 | `-St` | `start` | *st*art |
 | `-Sty` | `restart` | |
 | `-Styc` | `condrestart` ||
@@ -104,7 +107,8 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 |Args| `systemctl` | why |
 |-|-|-|
 | `-R` | `disable` | pacman-like |
-| `-Rc` | `clean` | pacman-like |
+| `-Rc` | `clean`  | pacman-like |
+| `-Re` | `freeze` | frEEze |
 | `-Rt` | `stop` | Terminate |
 | `-Rm` | `mask` | Mask |
 | `-Rk` | `kill` | |
@@ -115,22 +119,23 @@ If you don't like `sacman-spec` standard you can also implement a `pacman-like` 
 
 |Args| `systemctl` | why |
 |-|-|-|
-| `-Ql` | `list-unit-files` |
+| `-Qi` | `status` |
 | `-Qd` | `list-dependencies` |
-| `-Qo` | `list-automounts` | 'ao' |
+| `-Qj` | `list-jobs` |
+| `-Qk` | `list-sockets` |
+| `-Ql` | `list-unit-files` |
 | `-Qm` | `list-machines` |
+| `-Qo` | `list-automounts` | 'ao' |
 | `-Qt` | `list-timers` |
 | `-Qp` | `list-paths` |
-| `-Qk` | `list-sockets` |
 | `-Qy` | `list-units` | 'yunit' |
-| `-Qj` | `list-jobs` |
-| `-Qi` | `status` |
 
 ### -F
 
 |Args| `systemctl` | why |
 |-|-|-|
 | `-Fe` | `edit` |
+| `-Fc` | `cat` |
 
 
 ### -T
